@@ -7,14 +7,17 @@
     <link rel="shortcut icon" href="images/residential.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/all.min.css">
+    
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
           theme: {
             extend: {
               colors: {
-                clifford: '#da373d',
+                clifford: '#000',
                 primary: '#ABEF5F',
+                
               
               }
             }
@@ -23,32 +26,34 @@
       </script>
 
 </head>
-<body>
+<body class="bg-slate-100">
     <!--------------------------
     Header Section start
     ----------------------------->
 
-    <header>
-      <nav class="container">
-        <div class="navbar bg-base-100">
-          <div class="navbar-start">
-            <a class="btn btn-ghost text-xl"><i class="fa-solid fa-arrow-right "></i> Rinterio</a>
+    <header class=" bg-gradient-to-t from-white  pb-20">
+     <section class=" max-w-screen-xl mx-auto px-12 lg:px-15 ">
+      <nav >
+        <div class="navbar flex items-center justify-between">
+          <div class="navbar-start items-center flex   ">
+            <i class="fa-solid fa-arrow-right -rotate-45 bg-lime-400 rounded-3xl p-1"></i>
+            <a class=" text-xl text-clifford  font-bold text-4xl ml-2 "> Rinterio</a>
           </div>
 
           <div class="navbar-center hidden lg:flex">
-            <ul class="menu menu-horizontal px-1">
-              <li><a href="#">Home</a></li>
+            <ul class="menu menu-horizontal px-1 text-gray-500 font-bold text-base">
+              <li class="text-clifford"><a href="#">Home</a></li>
               <li><a href="#">Serviecs</a></li>
               <li><a href="#">Portfolio</a></li>
               <li><a href="#">Blogs</a></li>
               <li><a href="#">Contact Us</a></li>
             </ul>
           </div>
-          <div class="navbar-end">
-            <a class="btn  bg-primary">Book Consult <i class="fa-solid fa-arrow-right"></i></a>
+          <div class="navbar-end ">
+            <a class="bg-lime-400 py-2 px-4 rounded-3xl text-clifford  items-center flex text-white "> Book Consult <i class="fa-solid fa-arrow-right -rotate-45  rounded-3xl p-1 text-rounded-3xl bg-black ml-2	"></i></a>
           </div>
           <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <div tabindex="0" role="button" class="btn lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="h-5 w-5"
@@ -62,7 +67,7 @@
                   d="M4 6h16M4 12h8m-8 6h16" />
               </svg>
             </div>
-            <ul
+            <!-- <ul
               tabindex="0"
               class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
               <li><a href="#">Home</a></li>
@@ -70,17 +75,86 @@
               <li><a href="#">Portfolio</a></li>
               <li><a href="#">Blogs</a></li>
               <li><a href="#">Contact Us</a></li>
-            </ul>
+            </ul> -->
           </div>
         </div>
       </nav>
+
+
+         <!--------------------------
+    Banner Section start
+    ----------------------------->
+
+      <section class="mb-5">
+        <div class="text-center mx-auto">
+          <img src="images/banner.png" alt="" class="mx-auto">
+          <div >
+            <h1 class="text-4xl font-bold  text-clifford my-4">
+              A barn house of this design has a <br> striking appearance
+            </h1>
+            <p class="text-gray-500 mb-4">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal<br> accents, and large windows that flood the space with natural light.</p>
+            
+            <button class="btn btn-info bg-green-100 rounded-3xl px-5 text-lg mt-10">View Details <i class="fa-solid fa-arrow-right -rotate-45  bg-lime-400 p-1 rounded-3xl "></i></button>
+          </div>
+        </div>
+
+
+      </section>
+    </section>
 
     </header>
     <!--------------------------
     Main Section start
     ----------------------------->
 
-    <main>
+    <main class="max-w-screen-xl mx-auto px-8 lg:px-15">
+       <!--------------------------
+    About Section start
+    ----------------------------->
+    <section>
+      <div>
+        <div class="hero  min-h-screen">
+          
+          <div class="hero-content flex-col lg:flex-row-reverse">
+            <img
+              src="images/Rectangle.png">
+            <div>
+              <img src="images/Vector.png" alt="" class="mb-9">
+              <a href="" class="bg-white px-10 py-4 rounded-3xl font-bold text-xl "><i class="fa-solid fa-arrow-right "></i> About Us</a>
+              <h1 class="text-5xl font-bold pt-7"> We design thoughtful, liveable spaces </h1>
+              <p class="py-6">
+                The barn house captivates with its blend of rustic charm and 
+                modern sophistication, featuring weathered wood, sleek metal accents.
+              </p>
+              <div class="bg-white p-3 rounded-2xl flex gap-7">
+                <img src="images/commercial.png" alt="">
+                <div>
+                  <h2 class="font-bold mb-2">Commercial</h2>
+                  <p>
+                    The barn house captivates with its blend of rustic charm and modern.
+                  </p>
+                </div>
+              </div>
+              <div class="bg-white p-3 rounded-2xl flex gap-7 mt-10 ">
+                <img src="images/residential.png" alt="">
+                <div>
+                  <h2 class="font-bold mb-2">Residential</h2>
+                  <p>
+                    The barn house captivates with its blend of rustic charm and modern.
+                  </p>
+                </div>
+              </div>
+          
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+ 
+
+   
 
     </main>
     <!--------------------------
@@ -91,10 +165,10 @@
     </footer>
 
 
-    <i class="fa-solid fa-clock"></i>
 
 
     <script src="js/all.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    
 </body>
 </html>
