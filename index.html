@@ -10,6 +10,9 @@
     
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
           theme: {
@@ -24,6 +27,11 @@
           }
         }
       </script>
+  <style>
+    body{
+    font-family: "Manrope", sans-serif;
+    }
+  </style>
 
 </head>
 <body class="bg-slate-100">
@@ -50,8 +58,8 @@
             </ul>
           </div>
           <div class="navbar-end hidden lg:flex">
-            <a href="#" class="bg-white  p-2 rounded-box mr-3"><i class="fa-solid fa-magnifying-glass"></i></a>
-            <a href="#" class="bg-white  p-2 rounded-box mr-3"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="#" class="bg-white  px-3 py-2 rounded-full mr-3"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a href="#" class="bg-white  px-3 py-2 rounded-full mr-3"><i class="fa-solid fa-cart-shopping"></i></a>
             <a class="bg-lime-400 py-2 px-4 rounded-3xl text-clifford  items-center flex text-white "> Book Consult <i class="fa-solid fa-arrow-right -rotate-45  rounded-3xl p-1 text-rounded-3xl bg-black ml-2	"></i></a>
           </div>
           <div class="dropdown">
@@ -115,14 +123,14 @@
     ----------------------------->
     <section>
       <div>
-        <div class="hero  min-h-screen">
+        <div class="hero  min-h-screen pt-5">
           
           <div class="hero-content flex-col-reverse lg:flex-row-reverse">
             <img
-              src="images/Rectangle.png">
+              src="images/Rectangle.png" >
             <div>
-              <img src="images/Vector.png" alt="" class="mb-9">
-              <a href="" class="bg-white px-10 py-4 rounded-3xl font-bold text-xl "><i class="fa-solid fa-arrow-right "></i> About Us</a>
+              <img src="images/Vector.png" alt="" class="mb-9 hidden lg:flex">
+              <a href="" class="bg-white px-10 py-4 rounded-3xl font-bold text-xl  "><i class="fa-solid fa-arrow-right "></i> About Us</a>
               <h1 class="text-5xl font-bold pt-7"> We design thoughtful, liveable spaces </h1>
               <p class="py-6">
                 The barn house captivates with its blend of rustic charm and 
@@ -188,6 +196,237 @@
       </div>
 
     </section>
+    <!-- ----------------------------
+     customer says section Start
+     ---------------------------- -->
+     <section  class="mb-20">
+      <div class="text-center mb-20 ">
+       
+        <h1 class="font-extrabold text-3xl my-5">Customer Says</h1>
+        <p>The barn house captivates with its blend of rustic charm and modern sophistication, <br>featuring weathered wood, sleek metal accents.</p>
+      </div>
+      <div class="grid lg:grid-cols-3 md:grid-cols-3 gap-10">
+        <div class="card bg-base-100 max-w-96 shadow-xl pt-5">
+          <figure>
+            <div class="avatar ">
+              <div class="w-24 rounded-full">
+                <img src="images/1724482771415.jpg" alt="">
+              </div>
+          </figure>
+          <div class="card-body ">
+            <div class="rating">
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input
+                type="radio"
+                name="rating-2"
+                class="mask mask-star-2 bg-orange-400"
+                checked="checked" />
+              <input
+                type="radio"
+                name="rating-2"
+                class="mask mask-star-2 bg-orange-400"
+                checked="checked" />
+              <input
+                type="radio"
+                name="rating-2"
+                class="mask mask-star-2 bg-orange-400"
+                checked="checked" />
+              
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            </div>
+
+            <h2 class="card-title   font-bold">
+              Dave Smith
+            </h2>
+            <p>
+              "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.”
+    
+            </p>
+            <div class="card-actions justify-start">
+              <h2 class="font-bold text-gray-400">Designer, Co-founder</h2>
+            </div>
+          </div>
+        </div>
+       
+        
+       
+
+        
+        
+        <div>
+          <div class="card bg-base-100 max-w-96 shadow-xl pt-5">
+            <figure>
+              <div class="avatar ">
+                <div class="w-24 rounded-full">
+                  <img src="images/1724482771428.jpg" alt="">
+                </div>
+            </figure>
+            <div class="card-body ">
+              <div class="rating">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                  checked="checked" />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                  checked="checked" />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                  checked="checked" />
+                
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              </div>
+
+              <h2 class="card-title   font-bold">
+                Jemes Smith
+              </h2>
+              <p>
+                "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.”
+      
+              </p>
+              <div class="card-actions justify-start">
+                <h2 class="font-bold text-gray-400">Designer, Co-founder</h2>
+              </div>
+            </div>
+          </div>
+         
+          
+         
+    
+          
+          
+        </div>
+        <div>
+          <div class="card bg-base-100 max-w-96 shadow-xl pt-5">
+            <figure>
+              <div class="avatar ">
+                <div class="w-24 rounded-full">
+                  <img src="images/1724482771438.jpg" alt="">
+                </div>
+            </figure>
+            
+            <div class="card-body ">
+              <div class="rating">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                  checked="checked" />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                  checked="checked" />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                  checked="checked" />
+                
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              </div>
+
+              <h2 class="card-title   font-bold">
+               Mike Houston
+              </h2>
+              <p>
+                "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.”
+      
+              </p>
+              <div class="card-actions justify-start">
+                <h2 class="font-bold text-gray-400">Designer, Co-founder</h2>
+              </div>
+            </div>
+          </div>
+         
+          
+         
+    
+          
+          
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+  <!------------------------------------------
+  Our Latest Portfolio Section start
+  ------------------------------------------ -->
+  <main class="lg:bg-white py-20" >
+    <section class="max-w-screen-xl mx-auto px-8 lg:px-15">
+      <div class="text-center  ">
+        <a href="" class="bg-lime-100 px-10 py-2 rounded-3xl  font-bold  text-sm  "><i class="fa-solid fa-arrow-right "></i>Explore our Latest works</a>
+        <h1 class="font-extrabold text-3xl my-5">Our Latest Portfolio</h1>
+        <p class="mb-10">The barn house captivates with its blend of rustic charm and modern sophistication, <br>featuring weathered wood, sleek metal accents.</p >
+      </div>
+
+      <div>
+        <div class="flex flex-col lg:flex-row  lg:justify-between gap-6">
+          <div class="hero ">
+            <div class="hero-content flex-col lg:flex-row border-2 border-solid rounded-2xl px-5  py-4  bg-white">
+              <img
+                src="images/img1.png"
+                class="w-96 rounded-lg " />
+
+              <div>
+                <h1 class=" font-bold text-lg">Commercial</h1>
+                <p class="py-6">
+                  The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its blend of rustic charm and modern .
+                  <div class="flex items-center justify-left">
+                    <button class="  border-0 rounded-3xl mr-2 text-lg  font-bold">View Details </button><i class="fa-solid fa-arrow-right -rotate-45  bg-lime-400 p-1 rounded-3xl "></i>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex justify-center items-center border-2 border-solid rounded-2xl px-5  py-4   bg-white">
+            <img src="images/img2.png" alt="" class="w-96 rounded-lg">
+          </div>
+          <div class="flex justify-center items-center border-2 border-solid rounded-3xl px-5  py-4 bg-white lg:hidden ">
+            <img src="images/img5.png" alt="" class="w-96 rounded-lg">
+          </div>
+        </div>
+      </div>
+
+
+      <div class="flex flex-col-reverse lg:flex-row  lg:justify-between gap-6 mt-6">
+        <div class="flex justify-center items-center border-2 border-solid rounded-3xl px-5  py-4 bg-white lg:hidden ">
+          <img src="images/img5.png" alt="" class="w-96 rounded-lg">
+        </div>
+        <div class="flex justify-center items-center border-2 border-solid rounded-2xl px-5  py-4 bg-white ">
+          <img src="images/img3.png" alt="" class="w-96 rounded-lg">
+        </div>
+        <div class="hero ">
+          <div class="hero-content flex-col lg:flex-row border-2 border-solid rounded-2xl px-5  py-4 gap-5 bg-white">
+            <img
+              src="images/img4.png"
+              class="w-96 rounded-lg " />
+            <div>
+              <h1 class=" font-bold text-lg">Commercial</h1>
+              <p class="py-3">
+                The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its blend of rustic charm and modern .
+                <div class="flex items-center justify-left">
+                  <button class="  border-0 rounded-3xl mr-2 text-lg  font-bold">View Details </button><i class="fa-solid fa-arrow-right -rotate-45  bg-lime-400 p-1 rounded-2xl "></i>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center items-center border-2 border-solid rounded-3xl px-5  py-4 bg-white hidden lg:flex ">
+          <img src="images/img5.png" alt="" class="w-96 rounded-lg">
+        </div>
+
+      </div>
+
+
+    </section>
+
   </main>
 
     <!---------------------
@@ -222,6 +461,8 @@
     </section>
 
 
+  
+
  
 
    
@@ -249,8 +490,8 @@
               <a class="mr-2">Contact us</a>
               
             </nav>
-            <div class="navbar-end justify-center items-center flex ">
-              <a class="bg-lime-400 py-2 px-4 rounded-3xl text-clifford font-bold   text-clifford "> Book Consult <i class="fa-solid fa-arrow-right -rotate-45  rounded-3xl p-1 text-rounded-full bg-black text-white ml-2"></i></a>
+            <div class=" justify-center items-center flex ">
+              <a class="bg-lime-400 py-2 px-4 rounded-3xl  font-bold   text-clifford "> Book Consult <i class="fa-solid fa-arrow-right -rotate-45  rounded-3xl p-1 text-rounded-full bg-black text-white ml-2"></i></a>
             </div>
            
          
